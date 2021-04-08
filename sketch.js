@@ -10,6 +10,10 @@ let penColor
 let xcoord
 let ycoord
 
+//Fletcher Notes
+//let canv = createCanvas(500, 500);
+//canv.hide();
+
 function setup() {
   createCanvas(500, 500);
   penColor = color('rbg(255,255,255)');

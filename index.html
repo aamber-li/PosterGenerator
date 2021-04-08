@@ -1,15 +1,97 @@
 <!DOCTYPE html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>why dis no work</title>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='p5/p5.js' > </script>
-    <script src='sketch.js' ></script>
-  
+    <link rel="stylesheet" href="style.css">
+    <!--<script src='p5/p5.js' > </script> -->
+    <!-- <script src='sketch.js' ></script> -->
+    <script src='main.js' ></script>
+    <script src='jquery.js'></script>
 </head>
 <body>
-  
+    <div id = "folders" >
+        <div class = "window" class = "popup" onclick = "smallWindow()"> 
+            <div id = "archive">
+            <p>archive</p>
+            </div>
+        </div>
+        <div class = "window" class = "popup" onclick = "smallWindow()"> 
+        <div id = "form">
+            <p>form</p>
+        </div>
+        </div>
+    </div>
+    <div id = "formPopup"  onclick = "overlap()">
+        <div id = "popupHeader">
+            <div id = "exit" onclick = "exit()">
+                <p>x</p>
+            </div>
+        </div>
+        <div id ="formInput" action="/sketch.js">
+            <div class = "question">
+                <form onsubmit="return addData()">
+                    <h4>Name</h4>
+                    <!--<label>name</label> -->
+                    <input type="text" id="name"/>
+                
+                
+                    <h4>Age</h4>
+                    <!--<label>age</label>-->
+                    <input type="text" name="age"/>
+                
+                
+                    <h4>Race/Ethnicity</h4>
+                    <input type="radio" id="americanIndian" name="race" value="1">
+                    <label for="male">American Indian / Alaska Native</label><br>
+                    <input type="radio" id="asian" name="race" value="2">
+                    <label for="female">Asian</label><br>
+                    <input type="radio" id="black" name="race" value="3">
+                    <label for="other">Black / African American</label><br>
+                    <input type="radio" id="hispanic" name="race" value="4">
+                    <label for="other">Hispanic / Latino</label><br>
+                    <input type="radio" id="pacificIslander" name="race" value="5">
+                    <label for="other">Native Mawaiian / Other Pacific Islander</label><br>
+                    <input type="radio" id="white" name="race" value="6">
+                    <label for="other">White</label>
+                
+                
+                    <h4>Gender</h4>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="nonbinary">
+                    <label for="other">Nonbinary</label>
+                
+                    <h4>Sexual Identity</h4>
+                    <input type="radio" id="gay" name="sexId" value="1">
+                    <label for="male">Gay</label><br>
+                    <input type="radio" id="bi" name="sexId" value="2">
+                    <label for="male">Bisexual</label><br>
+                    <input type="radio" id="queer" name="sexId" value="3">
+                    <label for="female">Queer</label><br>
+                    <input type="radio" id="straight" name="sexId" value="4">
+                    <label for="other">Straight</label> <br>
+                    
+            
+                
+                    <input type="submit" value="Submit">
+            
+                </form>
+            
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class = "archivePopup" class = "popupWindow">
+        <div id = "popupHeader">
+            <div id = "exit"></div>
+        </div>
+        <div id ="windowText">
+            <p>This is a Popup.</p>
+        </div>
+    </div>
+    -->
 </body>
 </html>

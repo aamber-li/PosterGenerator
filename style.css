@@ -1,0 +1,69 @@
+
+#folders{
+    display: flex;
+    flex-direction: row;
+    /*z-index: 0;*/
+}
+.window{
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#formPopup{
+    position: relative;
+    top: 10px;
+    left:auto;
+    visibility: hidden;
+    width:500px;
+    height:700px;
+    border:2px;
+    border-style: solid;
+    border-color: black;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    
+}
+
+#formPopup.show{
+    visibility: visible;
+    z-index: 1;
+}
+
+#popupHeader{
+    width:500px;
+    height:50px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#exit{
+    font-size: large;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#submission{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#archive{
+   
+}
+
+#form{
+
+}
